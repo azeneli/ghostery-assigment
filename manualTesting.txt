@@ -19,5 +19,6 @@ Testing Scenario: Input money, user selects soda, user changes their mind, hits 
 Testing Scenario: Input money, user selects soda, selected soda is out of stock, machine should display out of stock and return money if no other choice selected
 
 
-
+Other ideas: cehck to see refrigeration temparature and see if it maintains it
+Performance Testing: check to see what happens when consecutive coins entered
 
