@@ -1,0 +1,23 @@
+Testing Item: Soda Vending Machine 
+
+The objective of this test will be to test the soda vending machine and its functionality. These will be a series of test scenarios in which the core functionality of the soda vending machine will be tested.
+
+Priority of the business: Based on the priority of the business this will determinate which features are of the most importat and how much testing time will be dedicated to each feature
+Identifiying Testing Scope: In this testing we will define 
+
+Core Funcionality:
+
+Testing Scenario: Check that the soda vending machine is powered on.
+Testing Scenario: Select a product and check the price is given on display
+Testing Scenario: Check to see what the affected currency is, and if user enters incorrect currency does the machine give an error
+Testing Scenario: Input Money, Select Soda, Vending Machine Dispenses Soda, change returned from initial balance
+Testing Scenario: Input Exact amount, Select Soda, Vending Machine Dispenses Soda, no money returned
+Testing Scenario: input insufficient money, select soda, machine notifies the buyer for insufficient balance and not dispense soda
+Testing Scenario: Input Money, Select soda, does the machine dispense the selected soda and if so is it the correct type of soda
+	ex: coke vs diet coke
+Testing Scenario: Input money, user selects soda, user changes their mind, hits the cancel button, machine should cancel order and return money
+Testing Scenario: Input money, user selects soda, selected soda is out of stock, machine should display out of stock and return money if no other choice selected
+
+
+
+
