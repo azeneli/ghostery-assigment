@@ -1,15 +1,14 @@
 Testing Item: Soda Vending Machine 
 
-The objective of this test will be to test the soda vending machine and its functionality. These will be a series of test scenarios in which the core functionality of the soda vending machine will be tested.
+The objective of this test will be to test the soda vending machine and its functionality. These will be a series of tests in which the core functionality of the soda vending machine will be verified.
 
-Priority of the business: Based on the priority of the business this will determinate which features are of the most importat and how much testing time will be dedicated to each feature
-Identifiying Testing Scope: In this testing we will define 
+Priority of the business: Based on the priority of the business this will determinate which features are of the most important and how much testing time will be dedicated to each feature
 
 Core Funcionality:
 
-Testing Scenario: Check that the soda vending machine is powered on.
-Testing Scenario: Select a product and check the price is given on display
-Testing Scenario: Check to see what the affected currency is, and if user enters incorrect currency does the machine give an error
+Testing Case: Check that the soda vending machine is powered on.
+Testing Case: Select a product and check the price is given on display
+Testing Case: Check to see what the affected currency is, and if user enters incorrect currency does the machine give an error
 Testing Scenario: Input Money, Select Soda, Vending Machine Dispenses Soda, change returned from initial balance
 Testing Scenario: Input Exact amount, Select Soda, Vending Machine Dispenses Soda, no money returned
 Testing Scenario: input insufficient money, select soda, machine notifies the buyer for insufficient balance and not dispense soda
@@ -17,8 +16,22 @@ Testing Scenario: Input Money, Select soda, does the machine dispense the select
 	ex: coke vs diet coke
 Testing Scenario: Input money, user selects soda, user changes their mind, hits the cancel button, machine should cancel order and return money
 Testing Scenario: Input money, user selects soda, selected soda is out of stock, machine should display out of stock and return money if no other choice selected
+Testing Case: Check that the soda vending machine contains a min/max amount of money that can be inputed. 
+	- Input less than minimum amount, select soda, provide error that insufficient funds 
+	- Input more than max amount, select soda, provide in display that max amount of money reached and will disperse back amount entered
+Testing Case: Make sure all the digits that the user would need to press are available 
+Testing Case: User inputs money, selects soda, as soda is being dispersed it get stuck in the dispertion tube, system should provide an alert & cease further operations
 
-
-Other ideas: cehck to see refrigeration temparature and see if it maintains it
 Performance Testing: check to see what happens when consecutive coins entered
+	Test Scenario: Check to see min/max of refrigeration temperature, if system too hot then turn on cooler, if too low turn off cooler. 
+	Test Scenario: Wwhat if user wants to have more then one item in one transaction: enter money, select soda, then would need to re-enter money
+        - if I re-enter the soda selection after entering the first selection what does it do.
+        - If battery or electricity is out during transaction. -- does the machine resume process or you would need to re-enter money
+    Testing Case: Select Soda, enter price amount through a combination of coins & cash, the selected soda should be provided
+    Testing Case: User enter money, selects soda, user changes their mind and the cancel is pressed as the dispensing is being initiated, action should be canceled
 
+Stress Testing: 
+        - repeat soda selection coda consecutively 
+        - if I enter money consecutively more than the selected amount how does the machine respond - does it stop
+
+During the though process of creating test, I based my reasoning on providing maximum test coverage under time restraints.In these test suites the main objective will be that the soda vending machine is working as intended if any new changes will be introduced.   
