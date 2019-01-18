@@ -21,6 +21,7 @@ Testing Case: Check that the soda vending machine contains a min/max amount of m
 	- Input more than max amount, select soda, provide in display that max amount of money reached and will disperse back amount entered
 Testing Case: Make sure all the digits that the user would need to press are available 
 Testing Case: User inputs money, selects soda, as soda is being dispersed it get stuck in the dispertion tube, system should provide an alert & cease further operations
+Testing Case: User enter money, selects soda, soda is out of stock, display with out of stock should be give and money returned
 
 Performance Testing: check to see what happens when consecutive coins entered
 	Test Scenario: Check to see min/max of refrigeration temperature, if system too hot then turn on cooler, if too low turn off cooler. 
