@@ -1,0 +1,3 @@
+Bug Report: 
+
+When reporting a new tracker, and you enter a script in the first name/ last name input it does not give you an error. It should highlight red as entry would be invalid.
