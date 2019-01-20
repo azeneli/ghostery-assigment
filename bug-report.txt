@@ -1,3 +1,49 @@
 Bug Report: 
 
-When reporting a new tracker, and you enter a script in the first name/ last name input it does not give you an error. It should highlight red as entry would be invalid.
+**Submitted by** Anri Zeneli
+
+----------------------------
+
+**What is Expected?**
+A user goes to a website and then clicks on a link within the site that takes you to another section in the website. This other section that is clicked, opens with a lightbox. Within the lightbox there is a close button. The close button should be clicked which would close the lightbox and allow the user to resume activity within the website. 
+
+**What happens?** 
+When a user clicks the close button in the lighbox it does not close it. It seems that the lightbox is unable to be closed and it does not allow the user to resume normal activity within the site. (In this case the lightbox is a container of information, closing it would allow to read the rest of news)
+
+**Reproducible?** 
+Not Consistently
+
+**Steps to Reproduce:**
+1. 
+2. 
+3. 
+
+**What OS? (Include version):**
+Tested on a Mac
+**What browser? (Include version):**
+Tested on Chrome, Mozilla
+
+**Additional Context**:
+
+
+
+*When was it first noticed?*
+01.28.2019
+*What is the current workaround (if there is one)?*
+The workaround would be to enable the website as a trusted site. If it is enabled as a trusted site the user would be to close the lightbox.
+
+*What customers are being affected?*
+N/A
+**Additional Files:** 
+The website is https://www.sportmediaset.mediaset.it/. The link to be clicked is on the right side where it says "Mercato ora per ora". This lightbox that opens within another section of the site would contain some news information. The user would close it and then keep reading the information.
+----------------------------
+
+**Impact?**
+*1-low impact, 5-mission critical*
+2
+
+
+
+Seems like the pop-up in the page is being detected as ad, and thus it is not allowed to be
+
+probably the redirect to the site may be picked up a as a redirect to an ad, and it is not allowing it to go further
