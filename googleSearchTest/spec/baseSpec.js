@@ -27,6 +27,38 @@ describe('Search Functionality', () => {
 		expect(browser.getTitle()).toBe('ghostery - Google Search');
 	});
 
+	it('should search the word by selecting the search button', () =>{
+		const inputForm = $$('input.gLFyf.gsfi');		
+		let searchQuery = 'ghostery';
+	
+		inputForm.sendKeys(searchQuery);
+		let EC = protractor.ExpectedConditions;
+		let button = $('[name="btnK"]');
+		let isClickable = EC.elementToBeClickable(button);
+
+		browser.wait(isClickable, 5000); //wait for an element to become clickable
+		button.click();
+	
+		// testing for page title as it indicates the you reached results page
+		expect(browser.getTitle()).toBe('ghostery - Google Search');
+	});
+
+	it('should take you to the Ghostery site if you are feeling lucky', () =>{
+		const inputForm = $$('input.gLFyf.gsfi');		
+		let searchQuery = 'ghostery';
+	
+		inputForm.sendKeys(searchQuery);
+		let EC = protractor.ExpectedConditions;
+		let button = $('[name="btnI"]');
+		let isClickable = EC.elementToBeClickable(button);
+
+		browser.wait(isClickable, 5000); //wait for an element to become clickable
+		button.click();
+
+		// testing for page title as it indicates the you reached results page
+		expect(browser.getCurrentUrl()).toBe('https://www.ghostery.com/');
+	});
+
 
 });
 
