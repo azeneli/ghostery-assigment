@@ -5,45 +5,44 @@ Bug Report:
 ----------------------------
 
 **What is Expected?**
-A user goes to a website and then clicks on a link within the site that takes you to another section in the website. This other section that is clicked, opens with a lightbox. Within the lightbox there is a close button. The close button should be clicked which would close the lightbox and allow the user to resume activity within the website. 
+A user goes to a website and then clicks on a link within the site that takes you to another section on the website. This other section that is clicked, opens with a lightbox. Within the lightbox there is a close button. The close button should be clicked which would close the lightbox and allow the user to resume activity within the website. 
 
 **What happens?** 
-When a user clicks the close button in the lighbox it does not close it. It seems that the lightbox is unable to be closed and it does not allow the user to resume normal activity within the site. (In this case the lightbox is a container of information, closing it would allow to read the rest of news)
+When a user clicks the close button in the lighbox it does not close it. It seems that the lightbox is unable to be closed and it does not allow the user to resume normal activity within the site. 
 
 **Reproducible?** 
 Not Consistently
 
 **Steps to Reproduce:**
-1. 
-2. 
-3. 
+1. Have Ghostery Extension Active
+2. Go to website: https://www.sportmediaset.mediaset.it/
+3. Click on texts under 'Mercato ora per ora' on the right side
+4. After clicking on one of the texts, it should take you to this section of the site: https://www.sportmediaset.mediaset.it/mercato/mercato-ora-per-ora.shtml. The link should open with a lightbox
+5. Try to click on the close button that is on the top right corner of the lightbox
 
 **What OS? (Include version):**
 Tested on a Mac
+
 **What browser? (Include version):**
 Tested on Chrome, Mozilla
 
 **Additional Context**:
-
-
+It seems that the lightbox box opened from the redirect on one of the text links could be picked up as an ad. This may not be allowing the user to close it as it could be categorized as an ad. 
 
 *When was it first noticed?*
 01.28.2019
+
 *What is the current workaround (if there is one)?*
 The workaround would be to enable the website as a trusted site. If it is enabled as a trusted site the user would be to close the lightbox.
 
 *What customers are being affected?*
 N/A
 **Additional Files:** 
-The website is https://www.sportmediaset.mediaset.it/. The link to be clicked is on the right side where it says "Mercato ora per ora". This lightbox that opens within another section of the site would contain some news information. The user would close it and then keep reading the information.
+N/A
 ----------------------------
 
 **Impact?**
 *1-low impact, 5-mission critical*
 2
 
-
-
-Seems like the pop-up in the page is being detected as ad, and thus it is not allowed to be
-
-probably the redirect to the site may be picked up a as a redirect to an ad, and it is not allowing it to go further
+The idea of reporting this as a bug is due to: as a user and a first time user of a site I would expect lightboxes to be closed if I do not have the site as a 'Trused Site'. Maybe in this case an ad was launched as the lightbox opened, but maybe that should not affect the behavior of a lightbox.
