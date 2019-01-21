@@ -45,4 +45,4 @@ N/A
 *1-low impact, 5-mission critical*
 2
 
-The idea of reporting this as a bug is due to: as a user and a first time user of a site I would expect lightboxes to be closed if I do not have the site as a 'Trused Site'. Maybe in this case an ad was launched as the lightbox opened, but maybe that should not affect the behavior of a lightbox.
+The idea of reporting this as a bug is due to: As a first time user of a website I would expect lightboxes to be closed if I do not have the site as a 'Trused Site' in the Ghostery extension. Maybe in this case, an ad was launched/pickedup as the lightbox opened, but that should not affect the behavior of a lightbox.
