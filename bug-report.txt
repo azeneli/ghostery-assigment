@@ -38,7 +38,7 @@ The workaround would be to enable the website as a trusted site. If it is enable
 *What customers are being affected?*
 N/A
 **Additional Files:** 
-N/A
+Screenshot provided in the github repository link
 ----------------------------
 
 **Impact?**
