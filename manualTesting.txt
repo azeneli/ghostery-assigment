@@ -1,4 +1,4 @@
-Testing Item: Soda Vending Machine 
+Testing System: Soda Vending Machine 
 
 The objective of this test will be to test the soda vending machine and its functionality. These will be a series of tests in which the core functionality of the soda vending machine will be verified.
 
@@ -6,33 +6,26 @@ Priority of the business: Based on the priority of the business this will determ
 
 Core Funcionality:
 
-Testing Case: Check that the soda vending machine is powered on.
-Testing Case: Select a product and check the price is given on display
-Testing Case: Check to see what the affected currency is, and if user enters incorrect currency does the machine give an error
-Testing Case: Input Money, Select Soda, Vending Machine Dispenses Soda, change returned from initial balance
-Testing Case: Input Exact amount, Select Soda, Vending Machine Dispenses Soda, no money returned
-Testing Case: input insufficient money, select soda, machine notifies the buyer for insufficient balance and not dispense soda
-Testing Case: Input Money, Select soda, does the machine dispense the selected soda and if so is it the correct type of soda
-	ex: coke vs diet coke
-Testing Case: Input money, user selects soda, user changes their mind, hits the cancel button, machine should cancel order and return money
-Testing Case: Input money, user selects soda, selected soda is out of stock, machine should display out of stock and return money if no other choice selected
-Testing Case: Check that the soda vending machine contains a min/max amount of money that can be inputed. 
-	- Input less than minimum amount, select soda, provide error that insufficient funds 
+Test Case: Check that the soda vending machine is powered on.
+Test Case: Select a product and check the price is given on display
+Test Case: Check to see what the selected currency is, and if user enters incorrect currency machine should display error
+Test Case: Input Money, Select Soda, Vending Machine Dispenses Soda, machine returns change from initial balance
+Test Case: Input Exact amount, Select Soda, Vending Machine Dispenses Soda, no money returned
+Test Case: input insufficient money, select soda, machine notifies the buyer for insufficient balance and not dispense soda
+Test Case: Input Money, Select soda, machine dispenses the selected soda
+Test Case: Input money, user selects soda, user changes their selection, hits the cancel button, machine should cancel order and return money
+Test Case: Input money, user selects soda, selected soda is out of stock, machine should display out of stock and return money if no other choice selected
+Test Case: Check that the soda vending machine contains a min/max amount of money that can be inputed. 
+	- Input less than minimum amount, select soda, provide error that insufficient funds entered
 	- Input more than max amount, select soda, provide in display that max amount of money reached and will disperse back amount entered
-Testing Case: Make sure all the digits that the user would need to press are available 
-Testing Case: User inputs money, selects soda, as soda is being dispersed it get stuck in the dispertion tube, system should provide an alert & cease further operations
-Testing Case: User enter money, selects soda, soda is out of stock, display with out of stock should be give and money returned
-
-Performance Testing: check to see what happens when consecutive coins entered
-	Test Case: Check to see min/max of refrigeration temperature, if system too hot then turn on cooler, if too low turn off cooler. 
-	Test Case: Wwhat if user wants to have more then one item in one transaction: enter money, select soda, then would need to re-enter money
+Test Case: Make sure all the digits that the user would need to press are available 
+Test Case: User inputs money, selects soda, as soda is being dispersed it gets stuck in the dispertion tube, system should provide an alert & cease further operations
+Test Case: Check to see min/max of refrigeration temperature 
+    - if system temparature is too hot then turn on cooler 
+    - if system temparature is too low thturn off cooler. 
+Test Case: User selects more then one item in one transaction: enter money, select soda, then would need to re-enter money
         - if I re-enter the soda selection after entering the first selection what does it do.
-        - If battery or electricity is out during transaction. -- does the machine resume process or you would need to re-enter money
+        - If battery or electricity is interrupted during transaction, machine should resume process and disperses soda
     Testing Case: Select Soda, enter price amount through a combination of coins & cash, the selected soda should be provided
-    Testing Case: User enters money, selects soda, user changes their mind and the cancel is pressed as the dispensing is being initiated, action should be canceled
-
-Stress Testing: 
-        - Repeat soda selection coda consecutively 
-        - Enter money consecutively more than the selected amount and observe how the machine responds 
 
 During the though process of creating test, I based my reasoning on providing maximum test coverage under time restraints.In these test suites the main objective will be that the soda vending machine is working as intended if any new changes will be introduced.   
