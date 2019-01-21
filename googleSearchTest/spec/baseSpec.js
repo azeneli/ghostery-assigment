@@ -1,11 +1,9 @@
-//import basePage from '../pages/basePage';
-
 describe('Search Functionality', () => {
 	beforeEach(() =>  {
 		browser.get('https://www.google.com/');	
 	});
 
-	xit('should search the word by hitting key', () =>{
+	it('should search the word by hitting key', () =>{
 		const inputForm = $$('input.gLFyf.gsfi');		
 		let searchQuery = 'ghostery';
 	
@@ -16,7 +14,7 @@ describe('Search Functionality', () => {
 		expect(browser.getTitle()).toBe('ghostery - Google Search');
 	});
 
-	xit('should search the word by selecting the search button', () =>{
+	it('should search the word by selecting the search button', () =>{
 		const inputForm = $$('input.gLFyf.gsfi');		
 		let searchQuery = 'ghostery';
 	
@@ -32,7 +30,7 @@ describe('Search Functionality', () => {
 		expect(browser.getTitle()).toBe('ghostery - Google Search');
 	});
 
-	xit('should take you to the Ghostery site if you are feeling lucky', () =>{
+	it('should take you to the Ghostery site if you are feeling lucky', () =>{
 		const inputForm = $$('input.gLFyf.gsfi');		
 		let searchQuery = 'ghostery';
 	
@@ -49,15 +47,15 @@ describe('Search Functionality', () => {
 	});
 
 	it('should remain on Google Site if no search term entered', () => {
-		// let EC = protractor.ExpectedConditions;
-		// let button = $('[name="btnK"]');
-		// let isClickable = EC.elementToBeClickable(button);
+		const inputForm = $$('input.gLFyf.gsfi');		
+		let searchQuery = '  ';
+	
+		inputForm.sendKeys(searchQuery);
+		let button = $$('input.gLFyf.gsfi');
+		button.click();
 
-		// browser.wait(isClickable, 5000); //wait for an element to become clickable
-		// button.click();
-
-		// no search term entered so stay on sitex
-		expect(browser.getCurrentUrl()).toBe('https://www.google.com');
+		// no search term entered so stay on sitex & staying within the site
+		expect(browser.getCurrentUrl()).toBe('https://www.google.com/');
 	});
 
 
