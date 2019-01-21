@@ -23,9 +23,8 @@ Test Case: User inputs money, selects soda, as soda is being dispersed it gets s
 Test Case: Check to see min/max of refrigeration temperature 
     - if system temparature is too hot then turn on cooler 
     - if system temparature is too low thturn off cooler. 
-Test Case: User selects more then one item in one transaction: enter money, select soda, then would need to re-enter money
-        - if I re-enter the soda selection after entering the first selection what does it do.
-        - If battery or electricity is interrupted during transaction, machine should resume process and disperses soda
-    Testing Case: Select Soda, enter price amount through a combination of coins & cash, the selected soda should be provided
+Test Case: User enters money for two soda selections, selects first soda, machine disperses the first soda, selects the second soda, machine disperses the second soda selection, also provides necessary change back
+Test Case: Electricity is interrupted during transaction, machine should resume process from the last point when the power is back on
+Test Case: Select Soda, enter price amount through a combination of coins & cash, the selected soda should be provided
 
-During the though process of creating test, I based my reasoning on providing maximum test coverage under time restraints.In these test suites the main objective will be that the soda vending machine is working as intended if any new changes will be introduced.   
+During the though process of creating the test cases, I based my reasoning on providing maximum test coverage under time restraints.In these test cases the main objective will be that the soda vending machine is working as intended if any new changes will be introduced.   
