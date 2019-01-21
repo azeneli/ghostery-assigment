@@ -8,7 +8,7 @@ Bug Report:
 A user goes to a website and then clicks on a link within the site that takes you to another section on the website. This other section that is clicked, opens with a lightbox. Within the lightbox there is a close button. The close button should be clicked which would close the lightbox and allow the user to resume activity within the website. 
 
 **What happens?** 
-When a user clicks the close button in the lighbox it does not close it. It seems that the lightbox is unable to be closed and it does not allow the user to resume normal activity within the site. 
+When a user clicks the close button in the lightbox, it does not close it. It seems that the lightbox is unable to be closed and it does not allow the user to resume normal activity within the site. 
 
 **Reproducible?** 
 Not Consistently
