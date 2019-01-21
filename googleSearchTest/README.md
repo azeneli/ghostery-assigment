@@ -6,7 +6,14 @@ Why Protractor: running selenium webdriver requires calling the builder in each 
 Steps to install
 
  ~ npm install
- ~ need to install protractor, jasmine, geckodriver, chromedriver. If manually installing each dependency
+ ~ need to install protractor, jasmine, geckodriver, chromedriver, jasmine spec reporter. If manually installing each dependency
+ 		commands for the dependcies above are: 
+ 			~ npm install protractor --save
+ 			~ npm install jasmine --save
+ 			~ npm install geckodriver --save
+ 			~ npm install chromedriver --save
+ 			~ npm install jasmine-spec-reporter --save-dev
+ 			~ npm install -g webdriver-manager
 
 Steps to Run: 
 
